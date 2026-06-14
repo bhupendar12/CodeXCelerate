@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haridwar University 2026 Model</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .topbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(30 64 175 / var(--tw-border-opacity, 1));;
+            color: white;
+            padding: 12px 40px;
+        }
+        .left{
+            font-size: 18px;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .right a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .apply-btn{
+            background-color: #3e8e41;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 18px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .logo img{
+            height: 55px;
+            cursor: pointer;
+            width: 180px;
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #4d4d4d;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+        }
+        .nav-links a:hover{
+            color: #0d6efd;
+        }
+        .announcement-bar{
+            background-color:  rgb(97 178 57 / var(--tw-bg-opacity, 1));
+            color: White;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .announcement-bar p{
+            margin: 0;
+            padding: 0 15px;
+        }
+        .hero{
+            position: relative;
+            width: 100%;
+            min-height: 90vh;
+            background: url(HU\ Image);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            padding: 0 8%;
+            box-sizing: border-box;
+            color: White;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 20, 40, 0.75) 0%, rgba(0,20,40,0.4)100%);
+            z-index: 1;
+        }
+        .hero-content{
+            position: relative;
+            z-index: 2;
+            max-width: 750px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .established-badge{
+            background-color: #39FF14;
+            color: #000000;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .hero-heading{
+            font-size: 3.8rem;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+        .hero-description{
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #e0e0e0;
+            text-shadow: 1px 1px 5px rgba(0,0,0,o.4);
+        }
+        .highlight-text{
+            color: #39ff14;
+            display: inline-block;
+        }
+        
+    </style>
+    <div class="topbar">
+        <div class="left">
+            <span> +91- 9828384970,  +91- 0011223344</span>
+        </div>
+        <div class="right">
+            <a href="#">Career</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact Us</a>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="HU logo.jpeg" alt="Haridwar University">
+        </div>
+        <div class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">RESEARCH</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADMISSION</a></li>
+            <li><a href="#">PLACEMENT</a></li>
+            <li><a href="#">ACADEMICS</a></li>
+            <li><a href="#">STUDENT CORNER</a></li>
+            <li><a href="#">ALUMINI</a></li>
+        </div>
+    </nav>
+    <div class="announcement-bar">
+        <marquee behaviour="scroll" direction="left" scrollamount="6">
+            Admission Open 2026 - Top Placement University + Scholorship up to 50% Apply Now!
+        </marquee>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="established-badge">Established 2010</span>
+            <h1 class="hero-heading">Welcome to <span class="highlight-text">Haridwar University</span></h1>
+            <p class="hero-description">
+                The congregation of knowledge and vision that provides a unique opportunity to
+                its students to gain insights into tomorrow's technology.
+            </p>
+            
+        </div>    
+    </section>
+
+</body>
+</html>
