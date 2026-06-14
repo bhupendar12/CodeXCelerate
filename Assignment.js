@@ -81,3 +81,18 @@ getData(1, ()=>{
         });
     });
 });
+
+
+
+// Code of Promise
+console.log("The example of Promise: ");
+const getPromise =()=>{
+    return new Promise((resolve, reject)=>{
+        console.log("I am Promise");
+        resolve("Success");
+    });
+};
+let promise = getPromise();
+promise.then(()=>{
+    console.log("Promise fullfilled");
+});
